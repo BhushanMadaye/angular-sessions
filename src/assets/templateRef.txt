@@ -1,0 +1,31 @@
+Template Reference variables
+
+ - Used to access DOM elements and its properties
+ - We declare a templateRef variable with # followed by variable name. Ex: #userInput
+ - Template reference varaibles are equivalent document.getElementById() in JS
+ - Usecases
+    - Respond to user input
+    - Change DOM element's properties dynamically
+    - Used to access a Component's properties and methods
+
+ - ViewChild
+    - Used to access DOM elements in class without sharing it from the html via events. 
+    - Usecases
+        - Used to focus on an input on screen load
+        - Used to manipulate DOM elements based on some backend data
+
+
+
+
+
+
+
+
+
+
+<p id="title">
+    Hello World!
+</p>
+
+const title = document.getElementById('title');
+title.style.color = 'red'
